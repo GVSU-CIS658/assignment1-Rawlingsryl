@@ -1,0 +1,88 @@
+/* entire screen */
+body{
+    background-color: rgb(238, 245, 255);
+    background-image: url("flowers.jpg"); 
+    /* Image privided by freepik.com by user pikisuperstar under their free use license 
+    https://www.freepik.com/free-vector/watercolor-abstract-floral-background_66241622.htm#fromView=keyword&page=1&position=0&uuid=9535e073-0c1f-4c4e-ad94-eac7807e7c88&query=Light+blue+flower+background
+    */
+}
+
+/* Parent box */
+.page-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 2.5fr;
+
+    grid-template-areas: 
+    "Side Header"
+    "Side Main";
+    font-family: "Georgia";
+    
+}
+/* "CSS Zen Garden to end of road to enlightenment */
+.intro{
+
+    grid-area: Header;
+    word-spacing: normal;
+}
+/* So what is this about to the end of requirements paragraph */
+.main.supporting{
+
+    grid-area: Main;
+}
+/* Bar on the side */
+.sidebar{
+    padding-top: 8px;
+    grid-area: Side;
+}
+
+/* sidebar design selector list */
+.design-selection ul{ 
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+}
+
+/* archives list */
+.design-archives ul{
+    display: flex;
+    flex-direction: column;
+
+    align-items: start;
+}
+/* Sidebar resources list */
+.zen-resources ul{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+/* Spacing to separate Road to enlightenment paragraph from "So what's Next paragraph.
+   Separating the preamble from the main content */
+.preamble{
+    padding-bottom: 1em;
+}
+/* changing size and color of "CSS Zen Garden" */
+h1{
+    font-size: 40px;
+    color:rgb(0, 24, 180);
+    text-align: center;
+}
+/* Changing size and color of "The Beauty of CSS Design */
+h2{
+    font-size: 24px;
+    color:rgb(0, 24, 180);
+    text-align: center;
+}
+/* Changing size and color of all other headers */
+h3{
+    font-size: 20px;
+    padding-top: .3em;
+    color:rgb(0, 24, 180);
+    text-align: center;
+}
+
+/* indenting every paragraph */
+p{
+    text-indent: 2em;
+}
